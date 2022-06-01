@@ -61,3 +61,10 @@ header .list-items {
   background: #2159c3;
 }
 
+/* ÁREA DE APRESENTAÇÃO */
+
+.area-apresentação {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between ;
+}
