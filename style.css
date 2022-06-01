@@ -22,4 +22,42 @@ ul li a {
   width: 100%;
 }
 
+/* HEADER */
+header {
+  background-color: #122a57;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 100px;
+  border-radius: 2px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+header .menu {
+  justify-content: space-between;
+}
+
+header .list-items {
+  display: flex;
+  /* width: 100%;
+  max-width: 260px;
+  justify-content: space-between; */
+}
+
+.flex-container .list-items li {
+  margin: 10px;
+}
+
+.flex-container .list-items li a {
+  color: white;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.flex-container .list-items li a:hover {
+  background: #2159c3;
+}
 
