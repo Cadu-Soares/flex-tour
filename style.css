@@ -18,11 +18,17 @@ ul li a {
 .flex-container {
   display: flex;
   max-width: 992px;
-  margin: auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+div img {
+  display: block;
   width: 100%;
 }
 
 /* HEADER */
+
 header {
   background-color: #122a57;
   display: flex;
@@ -35,36 +41,6 @@ header {
   font-weight: bold;
 }
 
-header .menu {
-  justify-content: space-between;
-}
-
-header .list-items {
-  display: flex;
-  /* width: 100%;
-  max-width: 260px;
-  justify-content: space-between; */
-}
-
-.flex-container .list-items li {
-  margin: 10px;
-}
-
-.flex-container .list-items li a {
-  color: white;
-  transition: 0.3s ease-in-out;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-.flex-container .list-items li a:hover {
-  background: #2159c3;
-}
-
-/* ÁREA DE APRESENTAÇÃO */
-
-.area-apresentação {
-  height: 100vh;
-  align-items: center;
-  justify-content: space-between ;
+.header-menu {
+  
 }
