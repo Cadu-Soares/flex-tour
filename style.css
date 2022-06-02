@@ -41,7 +41,9 @@ header {
   font-weight: bold;
 }
 
-.header-menu {
+ header .header-menu {
+  justify-content: space-between;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -57,7 +59,7 @@ header ul {
   color: white;
   transition: 0.3s ease-in-out;
   border-radius: 100px;
-  padding: 3px;
+  padding: 10px;
   width: 220px;
   text-align: center;
 }
@@ -65,3 +67,47 @@ header ul {
 .flex-container .list-items li a:hover {
   background: #2159c3;
 }
+
+/* ÁREA DE APRESENTAÇÃO */
+
+.area-apresentacao {
+  height: 50vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.area-apresentacao .texto-apresentacao {
+  min-height: 200px;
+}
+
+.area-apresentacao .texto-apresentacao h2 {
+  color: #122a57;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.area-apresentacao .texto-apresentacao p {
+  color: orangered;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.area-apresentacao .texto-apresentacao a {
+  color: white;
+  font-weight: bold;
+  background: #122a57;
+  transition: 0.3s ease-in-out;
+  border-radius: 100px;
+  padding:10px;
+  cursor: pointer;
+  width: 220px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.area-apresentacao .texto-apresentacao a:hover {
+  background: #2159c3;
+}
+
