@@ -42,5 +42,26 @@ header {
 }
 
 .header-menu {
-  
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+}
+
+.list-items li {
+  margin: 10px;
+}
+
+.flex-container .list-items li a {
+  color: white;
+  transition: 0.3s ease-in-out;
+  border-radius: 100px;
+  padding: 3px;
+  width: 220px;
+  text-align: center;
+}
+
+.flex-container .list-items li a:hover {
+  background: #2159c3;
 }
