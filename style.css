@@ -27,6 +27,13 @@ div img {
   width: 100%;
 }
 
+/* RESPONSIVIDADE */
+
+div img {
+  display: block;
+  width: 100%;
+}
+
 /* HEADER */
 
 header {
