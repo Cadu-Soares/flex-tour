@@ -139,7 +139,7 @@ header ul {
 }
 
 .texto-quem-somos {
-  min-height: 200px;
+  min-height: 320px;
   margin-left: 100px;
 }
 
@@ -164,4 +164,15 @@ header ul {
   color: orangered;
   font-weight: bold;
   text-align: justify;
+}
+
+/* SERVIÇOS */
+
+.container-externo {
+  background: #122A57;
+  width: 100%;
+}
+
+.servicos {
+  
 }
