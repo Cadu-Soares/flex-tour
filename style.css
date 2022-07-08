@@ -174,5 +174,57 @@ header ul {
 }
 
 .servicos {
-  
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.servicos h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+} 
+
+.lista-servico {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-servico {
+  text-align: center;
+}
+
+.item-servico p {
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.item-servico a {
+  width: 220px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  color: #122a57;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.item-servico a:hover {
+  background-color: rgba(221, 221, 221, 0.782);
+}
+
+.servicos img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70%;
+  margin-left: 30px;
 }
