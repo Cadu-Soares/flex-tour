@@ -106,7 +106,7 @@ header ul {
   margin-bottom: 20px;
 }
 
-.area-apresentacao .texto-apresentacao a {
+.link-btn {
   color: white;
   font-weight: bold;
   background: #122a57;
@@ -117,9 +117,10 @@ header ul {
   width: 220px;
   text-align: center;
   line-height: 50px;
+  text-decoration: none;
 }
 
-.area-apresentacao .texto-apresentacao a:hover {
+.link-btn:hover {
   background: #2159c3;
 }
 
@@ -233,13 +234,17 @@ header ul {
 /* PLANOS */
 
 .planos {
-
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .lista-planos {
-
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
 .item-planos {
-  
+  border: solid #122a57;
+  margin-left: 10px;
 }
