@@ -27,13 +27,6 @@ div img {
   width: 100%;
 }
 
-/* RESPONSIVIDADE */
-
-div img {
-  display: block;
-  width: 100%;
-}
-
 /* HEADER */
 
 header {
@@ -90,6 +83,10 @@ header ul {
 
 .area-apresentacao .texto-apresentacao {
   min-height: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .area-apresentacao .texto-apresentacao h2 {
@@ -107,6 +104,8 @@ header ul {
 }
 
 .link-btn {
+  margin: 0 auto;
+  margin-bottom: 20px;
   color: white;
   font-weight: bold;
   background: #122a57;
@@ -118,6 +117,12 @@ header ul {
   text-align: center;
   line-height: 50px;
   text-decoration: none;
+  align-items: center; 
+  display: block;
+  width: 200px;
+  height: 30px;
+  line-height: inherit;
+  padding-top: 13px;
 }
 
 .link-btn:hover {
@@ -129,11 +134,12 @@ header ul {
   justify-content: space-between;
 }
 
-.quem-somos-img {
-  /* background-repeat: no-repeat;
+/* .quem-somos-img {
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
-}
+  background-size: cover;
+} */
+
 .quem-somos img {
   width: 550px;
   height: 417px;
@@ -230,12 +236,18 @@ header ul {
   margin-left: 30px;
 }
 
-
 /* PLANOS */
 
 .planos {
   flex-direction: column;
   min-height: 100vh;
+  padding: 100px 0;
+}
+
+.planos h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .lista-planos {
@@ -245,6 +257,96 @@ header ul {
 }
 
 .item-planos {
-  border: solid #122a57;
-  margin-left: 10px;
+  border: 5px solid #122a57;
+  margin-right: 20px;
+  padding: 10px;
+  max-width: 240px;
+}
+
+.item-planos a {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  background: #122a57;
+  transition: 0.3s ease-in-out;
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
+  width: 220px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  align-items: center; 
+  display: block;
+  width: 200px;
+  height: 30px;
+  line-height: inherit;
+  padding-top: 13px;
+}
+
+.item-planos h3 {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item-planos h3::after {
+  content: "";
+  background: #122A57;
+  width: 100%;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.item-planos ul {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+} 
+
+.item-planos ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.item-planos ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #122A57;
+  margin-right: 5px;
+  border-radius: 50px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #122A57;
+  color: #fff;
+  font-weight: bold;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer {
+  justify-content: space-between;
+}
+
+
+/* RESPONSIVIDADE */
+  @media(max-width: 992px){
+      .flex-container{
+        flex-direction: column;
+      }
+}
+
+div img {
+  display: block;
+  width: 100%;
 }
