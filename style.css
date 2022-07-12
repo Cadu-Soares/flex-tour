@@ -20,11 +20,13 @@ ul li a {
   max-width: 992px;
   margin: 0 auto;
   width: 100%;
+  min-width: 320px;
+  padding: 10px 15px;
 }
 
 div img {
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 /* HEADER */
@@ -134,15 +136,9 @@ header ul {
   justify-content: space-between;
 }
 
-/* .quem-somos-img {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
-
 .quem-somos img {
-  width: 550px;
-  height: 417px;
+  width: 541px;
+  height: 386px;
 }
 
 .texto-quem-somos {
@@ -340,13 +336,52 @@ footer .footer {
 
 
 /* RESPONSIVIDADE */
-  @media(max-width: 992px){
-      .flex-container{
+  @media(max-width: 990px){
+
+      /* .flex-container {
         flex-direction: column;
+        margin: auto;
+      } */
+      
+      .area-apresentacao {
+        flex-direction: column-reverse;
+        justify-content: flex-end
+      }
+
+      /* .area-apresentacao .texto-apresentacao {
+        min-height: 200px;
+        width: 100%;
+      } */
+
+      .quem-somos {
+        flex-direction: column-reverse;
+      }
+
+      .quem-somos img {
+        min-width: 320px;
+        margin: auto;
+
+      }
+
+      .lista-servico {
+        flex-direction: column;
+        margin: auto;
+        width: 30%;
+      }
+
+      .item-servico img {
+        margin: 0 auto;
+      }
+
+      .lista-planos {
+        flex-direction: column;
+        margin: auto;;
+      }
+
+      .lista-planos .item-planos {
+        max-width: 100%;
+        margin: auto;
+        width: 100%;
       }
 }
 
-div img {
-  display: block;
-  width: 100%;
-}
